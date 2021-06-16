@@ -117,7 +117,8 @@ def winner(board)
   end
 end
 def play(board)
-  loop do turn(board)
+  b = current_player(board)
+  loop do turn(b)
  if over?(board) 
   return nil
   break
