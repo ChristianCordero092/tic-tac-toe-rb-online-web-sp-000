@@ -122,6 +122,7 @@ def play(board)
    break
   elsif won?(board) && (current_player(board) == "X")
   puts "Congratulations X!"
+  break
  end
 end
 end
