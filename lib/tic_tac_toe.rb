@@ -117,14 +117,7 @@ def winner(board)
   end
 end
 def play(board)
-  b = current_player(board)
-  loop do turn(b)
+  loop do turn(board)
  if over?(board) 
-  return nil
-  break
-elsif over?(board) && winner(board) == "X"
-  return "Congratulations X!"
-  break
- end
 end
 end
