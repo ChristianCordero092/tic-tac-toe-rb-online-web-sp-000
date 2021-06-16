@@ -53,13 +53,13 @@ end
 def turn(board)
   puts "Please enter 1-9:"
   index = gets.strip
-  a = input_to_index(index)
+  a = input_to_index(input)
   if valid_move?(board, a) == false
    puts "Please enter 1-9:"
    index = gets.strip
-   input_to_index(index)
+   input_to_index(input)
   elsif 
-    move(board, a, value = "X")
+    move(board, a, value)
     display_board(board)
   end
 end
