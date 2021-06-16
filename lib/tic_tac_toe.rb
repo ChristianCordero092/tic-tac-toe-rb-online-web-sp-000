@@ -59,7 +59,8 @@ def turn(board)
    index = gets.strip
    input_to_index(input)
   elsif 
-    move(board, a, value = "O")
+    b = current_player(board)
+    move(board, a, b)
     display_board(board)
   end
 end
