@@ -59,7 +59,7 @@ def turn(board)
    index = gets.strip
    input_to_index(input)
   elsif 
-    move(board, a, value = "X")
+    move(board, a, value)
     display_board(board)
   end
 end
