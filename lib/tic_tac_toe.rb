@@ -122,7 +122,7 @@ def play(board)
   return nil
   break
 elsif over?(board) && winner(board) == "X"
-  puts "Congratulations X!"
+  return "Congratulations X!"
   break
  end
 end
