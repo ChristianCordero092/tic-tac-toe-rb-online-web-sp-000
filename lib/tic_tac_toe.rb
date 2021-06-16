@@ -118,6 +118,7 @@ def winner(board)
 end
 def play(board)
   loop do turn(board)
+    current_player(board)
  if draw?(board) 
   puts "Cat's Game!"
    break
