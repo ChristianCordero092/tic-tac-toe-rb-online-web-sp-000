@@ -118,7 +118,7 @@ def winner(board)
 end
 def play(board)
   until over?(board)
-  loop do turn(board)
+   turn(board)
 end
 if won?(board)
     winner(board) == "X" || winner(board) == "O"
@@ -127,4 +127,4 @@ if won?(board)
     puts "Cat\'s Game!"
   end
 end
-end
+
