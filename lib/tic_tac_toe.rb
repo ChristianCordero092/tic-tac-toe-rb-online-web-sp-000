@@ -118,10 +118,10 @@ def winner(board)
 end
 def play(board)
   loop do turn(board)
- if over?(board) && winner("X")
-  puts "Congratulations X!"
+ if over?(board) 
   break
-else
+elsif over?(board) && winner(board) == "X"
+  puts "Congratulations X!"
   break
  end
 end
