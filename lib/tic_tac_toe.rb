@@ -119,6 +119,7 @@ end
 def play(board)
   loop do turn(board)
  if over?(board) 
+  return nil
   break
 elsif over?(board) && winner(board) == "X"
   puts "Congratulations X!"
