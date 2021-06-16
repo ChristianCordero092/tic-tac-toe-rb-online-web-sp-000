@@ -116,7 +116,7 @@ def winner(board)
   end
 end
 def play(board)
-  9.times do current_player(board)
+  9.times do turn(board)
  if over?(board) && draw?(board)
    puts "Cat's Game!"
    break
