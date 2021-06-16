@@ -118,7 +118,7 @@ def winner(board)
 end
 def play(board)
   loop do turn(board)
- if won?(board)
+ if board == won?(board)
   break
  end
 end
