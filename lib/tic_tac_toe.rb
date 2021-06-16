@@ -118,10 +118,7 @@ def winner(board)
 end
 def play(board)
   loop do turn(board)
- if draw?(board) 
-  puts "Cat's Game!"
-   break
- elsif over?(board) || won?(board)
+ if over?(board) 
   break
  end
 end
